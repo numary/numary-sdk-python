@@ -6,7 +6,7 @@
 # raise a `RecursionError`.
 # In order to avoid this, import only the API that you directly need like:
 #
-#   from .api.accounts_api import AccountsApi
+#   from ledgerclient.api.accounts_api import AccountsApi
 #
 # or import this package, but before doing it, use:
 #
