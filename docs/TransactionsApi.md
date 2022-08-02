@@ -143,9 +143,9 @@ with ledgerclient.ApiClient(configuration) as api_client:
     api_instance = transactions_api.TransactionsApi(api_client)
     ledger = "ledger001" # str | Name of the ledger.
     reference = "ref:001" # str | Filter transactions by reference field. (optional)
-    account = "users:001" # str | Filter transactions with postings involving given account, either as source or destination. (optional)
-    source = "users:001" # str | Filter transactions with postings involving given account at source. (optional)
-    destination = "users:001" # str | Filter transactions with postings involving given account at destination. (optional)
+    account = "users:001" # str | Filter transactions with postings involving given account, either as source or destination (regular expression placed between ^ and $). (optional)
+    source = "users:001" # str | Filter transactions with postings involving given account at source (regular expression placed between ^ and $). (optional)
+    destination = "users:001" # str | Filter transactions with postings involving given account at destination (regular expression placed between ^ and $). (optional)
     metadata = {} # {str: (bool, date, datetime, dict, float, int, list, str, none_type)} | Filter transactions by metadata key value pairs. Nested objects can be used as seen in the example below. (optional)
 
     # example passing only required values which don't have defaults set
@@ -171,9 +171,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ledger** | **str**| Name of the ledger. |
  **reference** | **str**| Filter transactions by reference field. | [optional]
- **account** | **str**| Filter transactions with postings involving given account, either as source or destination. | [optional]
- **source** | **str**| Filter transactions with postings involving given account at source. | [optional]
- **destination** | **str**| Filter transactions with postings involving given account at destination. | [optional]
+ **account** | **str**| Filter transactions with postings involving given account, either as source or destination (regular expression placed between ^ and $). | [optional]
+ **source** | **str**| Filter transactions with postings involving given account at source (regular expression placed between ^ and $). | [optional]
+ **destination** | **str**| Filter transactions with postings involving given account at destination (regular expression placed between ^ and $). | [optional]
  **metadata** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}**| Filter transactions by metadata key value pairs. Nested objects can be used as seen in the example below. | [optional]
 
 ### Return type

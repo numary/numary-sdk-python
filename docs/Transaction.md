@@ -4,6 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**timestamp** | **datetime** |  | 
 **postings** | [**[Posting]**](Posting.md) |  | 
 **txid** | **int** |  | 
 **reference** | **str** |  | [optional] 
